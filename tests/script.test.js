@@ -4,10 +4,11 @@ const INVALID_FILE_NAME = ["", null, "temp.txt"];
 
 const INVALID_INPUT = [
   "./data/invalid-input-1.txt", // Line 1: San Jose Earthquakes 3 Santa Cruz Slugs 3 (No dilimiter, ie; ", ")
-  "./data/invalid-input-2.txt", // Line 1: San Jose Earthquakes, Santa Cruz Slugs 3 (No score for home team )
+  "./data/invalid-input-2.txt", // Line 1: San Jose Earthquakes, Santa Cruz Slugs 3 (No score for home team)
   "./data/invalid-input-3.txt", // Line 4: Felton Lumberjacks, Aptos FC 2 (No score for home team after finding number of games per match day)
   "./data/invalid-input-4.txt", // Line 4: Felton Lumberjacks 1, Aptos FC (No score for away team after finding number of games per match day)
-  "./data/invalid-input-5.txt", // Number of games for the final match day is not valid according to the number of games per match day)
+  "./data/invalid-input-5.txt", // Number of games for the final match day is not valid according to the number of games per match day
+  "./data/invalid-input-6.txt", // Line 1: San Jose Earthquakes 3, Santa Jose Earthquakes 2 (Same teams)
 ];
 
 const VALID_SAMPLE_INPUT = "./data/sample-input.txt";

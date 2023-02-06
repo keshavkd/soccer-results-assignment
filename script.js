@@ -79,6 +79,7 @@ const getHomeAndAway = (str) => {
   // Team names
   homeTeam = homeTeam.join(" ");
   awayTeam = awayTeam.join(" ");
+  if (homeTeam === awayTeam) return [null];
   return [
     [homeTeam, parseInt(homeScore)],
     [awayTeam, parseInt(awayScore)],
