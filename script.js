@@ -156,8 +156,6 @@ const printResults = (games) => {
       }
 
       console.log("");
-      // Clearing the heap after the end of the match day to store new results in the next iteration
-      gameHeap.clear();
     }
   }
 };
