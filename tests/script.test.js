@@ -80,9 +80,11 @@ describe("script", () => {
 
     it("should return error messages with invalid sample input", async () => {
       console.error = jest.fn();
+
       for (let input of INVALID_INPUT) {
         await readLines(input).then((games) => printResults(games));
       }
+
       expect(console.error).toHaveBeenCalledTimes(INVALID_INPUT.length);
     });
   });

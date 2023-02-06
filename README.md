@@ -1,6 +1,6 @@
 # Soccer Results - Take Home Assignment
 
-Script that reads a listing of game results for a soccer league and prints the top teams at the end of each matchday.
+Script to parse a soccer results file, get the scores and return the top 3 teams with the highest scores at the end of each match day.
 
 ## Installation
 
@@ -14,10 +14,16 @@ npm install
 
 ## Usage
 
-In the directory, open command-line and run
+- In the directory, open command-line and run:
 
 ```
 node script.js data/sample-input.txt
+```
+
+- To run tests:
+
+```
+npm test
 ```
 
 ## Design
