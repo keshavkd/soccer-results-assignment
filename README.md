@@ -44,7 +44,7 @@ From the problem statement, we know for a fact that all teams must play once per
 
 ##### Comparing results of each game and printing the result after every match day
 
-The main reason as to why we use a Max Heap here is to reduce the time taken to sort the highest scores after every match day. Generally sorting would take O(nlogn) but using Heapify would take O(n) instead and getting the top 3 teams would be O(1) each.
+The main reason why we use a Max Heap is to reduce the time taken to sort the highest scores after every match day. Generally, sorting would take O(NlogN) time but using Heapify would take O(N) instead and getting the top three teams would be O(logN) each which would make the final time complexity, O(N) + O(logN) = O(N). The space complexity however will be O(N) as it requires an additional space of length N. An alternate aproach is to use a Min heap and insert only three elements into the heap. This approach would be in time O(NlogK) with O(K) as the space complexity where K = 3. Since we have a map of size N already, we can go ahead with the first approach. The following steps are taken considering the first approach:
 
 - First sanitize the line and get corresponding team names and scores
 - Store the result of the game in the map after comparing scores
