@@ -2,6 +2,9 @@
   "dependencies": {
     "datastructures-js": "^12.0.0"
   },
+  "scripts": {
+    "test": "jest"
+  },
   "devDependencies": {
     "jest": "^29.4.1"
   }

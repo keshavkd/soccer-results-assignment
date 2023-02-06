@@ -17,7 +17,7 @@ npm install
 In the directory, open command-line and run
 
 ```
-node script.js
+node script.js data/sample-input.txt
 ```
 
 ## Design
